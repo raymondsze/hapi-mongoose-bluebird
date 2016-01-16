@@ -1,4 +1,4 @@
-## hapi-async-methods [![Build Status](https://travis-ci.org/raymondsze/hapi-mongoose-bluebird.svg)](https://travis-ci.org/raymondsze/hapi-mongoose-bluebird.svg?branch=master)
+## hapi-mongoose-bluebird [![Build Status](https://travis-ci.org/raymondsze/hapi-mongoose-bluebird.svg)](https://travis-ci.org/raymondsze/hapi-mongoose-bluebird.svg?branch=master)
 ## Introduction
 <p>1. This plugin can connect mongodb when server onPreStart phase and end connection whtn server onPreStop.</p>
 <p>2. Enable scan models by array of directory path.</p>
