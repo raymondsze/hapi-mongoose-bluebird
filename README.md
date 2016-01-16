@@ -55,14 +55,9 @@ const schema = new mongoose.Schema({
   }
 });
 
-schema.methods.getInfo = async function () {
-  return {
-    id: this.id,
-    username: this.username,
-    email: this.email,
-    role: this.role
-  };
-};
-
 module.exports = mongoose.model('User', schema, 'Users');
 ```
+
+## Example
+<p>Please visit the test case for example reference. </p>
+<a href= "https://github.com/raymondsze/hapi-mongoose-bluebird/tree/master/test">Example usage</a>
