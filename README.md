@@ -29,6 +29,7 @@ server.decorate('server', 'models', server.plugins['hapi-mongoose-bluebird'].mod
 <p>Example:</p>
 ```javascript
 const mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 
 const schema = new mongoose.Schema({
   username: {
