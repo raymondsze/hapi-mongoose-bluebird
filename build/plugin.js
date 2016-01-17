@@ -6,7 +6,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 * @Author: Sze Ka Wai Raymond (FakeC)
 * @Date:   2016-01-04 02:30:14
 * @Last Modified by:   Sze Ka Wai Raymond (FakeC)
-* @Last Modified time: 2016-01-17 22:12:32
+* @Last Modified time: 2016-01-17 22:42:10
 */
 
 const util = require('util');
@@ -66,7 +66,7 @@ function register(server, options, next) {
 							let mongooseModels = _.isArray(obj) ? obj : [obj];
 							_.each(mongooseModels, model => {
 								if (model.model && model.model.name && model.model.name === 'model') {
-									models[obj.modelName] = obj;
+									models[model.modelName] = model;
 								}
 							});
 						}

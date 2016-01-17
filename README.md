@@ -23,7 +23,10 @@ server.decorate('server', 'models', server.plugins['hapi-mongoose-bluebird'].mod
 <p><b>password</b>(Optional)</p>
 <p><b>opts</b>(Optional): This is the option passed to mongoose.</p>
 <p><b>models</b> (Optional): This is the array of dir path you want to scan the models</p>
-<p>The file inside the directory should be like that</p>
+<p>The file inside the directory should <b>module.exports</b> or <b>export default</b> the following</p>
+<p>1. A mongoose model instance </p>
+<p>2. An array of mongoose model instance </p>
+<p>Example:</p>
 ```javascript
 const mongoose = require('mongoose');
 
