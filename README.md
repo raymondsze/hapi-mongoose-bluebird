@@ -1,6 +1,6 @@
 ## hapi-mongoose-bluebird [![Build Status](https://travis-ci.org/raymondsze/hapi-mongoose-bluebird.svg)](https://travis-ci.org/raymondsze/hapi-mongoose-bluebird.svg?branch=master)
 ## Introduction
-<p>1. This plugin can connect mongodb when server onPreStart phase and end connection whtn server onPreStop.</p>
+<p>1. This plugin can connect mongodb when server onPreStart phase and end connection whtn server onPreStop. (require Hapi 11+)</p>
 <p>2. Enable scan models by array of directory path.</p>
 <p>3. models can be accessible from server.plugins['hapi-mongoose-bluebird'].models.</p>
 <p>4. mongoose can be accessible from server.plugins['hapi-mongoose-bluebird'].mongoose.</p>
@@ -11,7 +11,7 @@ server.decorate('server', 'models', server.plugins['hapi-mongoose-bluebird'].mod
 ```
 
 ## Install
-<p>Note: Bluebird and Mongoose is required, the Promise return from the mongoose is not mPromise but Bluebird.</p>
+<p>Note: <a href="https://github.com/petkaantonov/bluebird">Bluebird</a> and <a href="http://mongoosejs.com/">Mongoose</a> are required, the Promise return from the mongoose is not M-Promise but Bluebird.</p>
 <p><b>npm install --save bluebird mongoose</b></p>
 
 <p><b>npm install --save hapi-mongoose-bluebird</b></p>
@@ -61,3 +61,26 @@ module.exports = mongoose.model('User', schema, 'Users');
 ## Example
 <p>Please visit the test case for example reference. </p>
 <a href= "https://github.com/raymondsze/hapi-mongoose-bluebird/tree/master/test">Example usage</a>
+
+## LICENSE
+The MIT License (MIT)
+
+Copyright (c) 2016 Sze Ka Wai Raymond
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

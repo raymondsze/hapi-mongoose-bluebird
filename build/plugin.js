@@ -6,7 +6,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 * @Author: Sze Ka Wai Raymond (FakeC)
 * @Date:   2016-01-04 02:30:14
 * @Last Modified by:   Sze Ka Wai Raymond (FakeC)
-* @Last Modified time: 2016-01-17 00:42:30
+* @Last Modified time: 2016-01-17 03:44:47
 */
 
 const util = require('util');
@@ -72,7 +72,7 @@ function register(server, options, next) {
 					});
 				});
 			});
-			Promise.all(promises).then(mongooseModels => {
+			yield Promise.all(promises).then(mongooseModels => {
 				_.each(_.flatten(mongooseModels, true), model => {
 					if (model.model.name === 'model') {
 						// registers all the models specified in config
