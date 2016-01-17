@@ -1,6 +1,6 @@
 {
   "name": "hapi-mongoose-bluebird",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "Support mongoose and mongoose model for hapi with bluebird promise",
   "main": "build/index.js",
