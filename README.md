@@ -1,4 +1,7 @@
 ## hapi-mongoose-bluebird [![Build Status](https://travis-ci.org/raymondsze/hapi-mongoose-bluebird.svg)](https://travis-ci.org/raymondsze/hapi-mongoose-bluebird.svg?branch=master)
+## Not Maintained
+:exclamation: I haven't use Hapi framework for a long time. This repository is no longer maintained.
+
 ## Introduction
 <p>1. This plugin can connect mongodb when server onPreStart phase and end connection whtn server onPreStop. (require Hapi 11+)</p>
 <p>2. Enable scan models by array of directory path.</p>
